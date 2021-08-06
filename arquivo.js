@@ -8,14 +8,17 @@ function executar(){
 		
 		var medidaPortaoSingle = parseInt(0);
 		var medidaPortaoDouble = parseInt(0);
+		var blankPost = parseInt(0);
 		if(portaoSingle > parseInt(0)){
 			for (var i = 0; i < portaoSingle; i++) {
-				medidaPortaoSingle = parseInt(prompt("Medida portão single? - " + i  , ""));
+				medidaPortaoSingle = parseInt(prompt("Medida portão single? - Portão" + i  , ""));
+				blankPost += parseInt(prompt("Quantos blanck post? - Portão" + i  , "0"));
 			}
 		}
 		if(portaoDouble > parseInt(0)){
 			for (var i = 0; i < portaoDouble; i++) {
 				medidaPortaoDouble += parseInt(prompt("Medida portão double? - "  + i , ""));
+				blankPost += parseInt(prompt("Quantos blanck post? - Portão" + i  , "0"));
 			}
 		}
 
@@ -39,7 +42,7 @@ function executar(){
 		var cap = post;
 		var bag50 = (portaoSingle * 4) + (portaoDouble * 8);
 		var gateHinges = (portaoSingle * 1) + (portaoDouble * 2);
-		var heavyPost = (portaoSingle * 2) + (portaoDouble * 2);
+		var heavyPost = (portaoSingle * 2) + (portaoDouble * 2) - blankPost;
 		var lock = portaoDouble + portaoSingle ;
 		
 		
