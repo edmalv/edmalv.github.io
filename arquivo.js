@@ -1,10 +1,10 @@
 function executar(){
- var medida1 = parseInt(prompt("Qual a medida?", ""));
-		var endPost = parseInt(prompt("Quantos end Post?", ""));
-		var cornerPost = parseInt(prompt("Quantos corner post?", ""));
-		var comprimento = parseInt(prompt("Quantos comprimento do painel?", "8"));
-		var portaoSingle = parseInt(prompt("Quantos portão single?", "0"));
-		var portaoDouble = parseInt(prompt("Quantos portão double?", "0"));
+ 		var medida1 = parseInt(document.getElementById("medida1").value);
+		var endPost = parseInt(document.getElementById("endPost").value);
+		var cornerPost = parseInt(document.getElementById("cornerPost").value);
+		var comprimento = parseInt(document.getElementById("comprimento").value);
+		var portaoSingle = parseInt(document.getElementById("portaoSingle").value);
+		var portaoDouble = parseInt(document.getElementById("portaoDouble").value);
 		
 		var medidaPortaoSingle = parseInt(0);
 		var medidaPortaoDouble = parseInt(0);
