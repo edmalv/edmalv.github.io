@@ -39,7 +39,7 @@ function executar(){
 		var linePost = post - (endPost + cornerPost);
 		var painel = linePost + 1;
 		var bag = post * 1.25;
-		var cap = post;
+		var cap = Math.round( linePost ) + cornerPost + endPost + heavyPost + blankPost;
 		var bag50 = (portaoSingle * 4) + (portaoDouble * 8);
 		var gateHinges = (portaoSingle * 1) + (portaoDouble * 2);
 		var heavyPost = (portaoSingle * 2) + (portaoDouble * 2) - blankPost;
@@ -51,8 +51,9 @@ function executar(){
 			'<br><b> Painel </b> =  ' + Math.round( painel )+
 			'<br><b> Corner Post </b> =  ' + cornerPost +
 			'<br><b> End Post </b> =  ' + endPost +
-			'<br><b> Heavy Post </b> =  ' + heavyPost +
-			'<br><b> Cap </b> =  ' + Math.round(cap) +
+			'<br><b> Heavy End </b> =  ' + heavyPost +
+		    	'<br><b> Blank Post </b> =  ' + blankPost +
+			'<br><b> Cap </b> =  ' + cap +
 			'<br><b> Quickret 80lbs </b> =  ' + Math.round(bag)  +
 			'<br><b> Quickret 50lbs </b> =  ' +  bag50 +
 			'<br><b> Portão Single  </b> =  ' + portaoSingle  +
