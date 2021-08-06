@@ -21,11 +21,6 @@ function executar(){
 				blankPost += parseInt(prompt("Quantos blank post? - Portão" + i  , "0"));
 			}
 		}
-
-		/*var medida1 =  110;
-		var endPost = 1;
-		var cornerPost = 1;
-		var comprimento = 8;*/
 		
 		if(portaoSingle > 0){
 			medida1 = medida1 - (portaoSingle * medidaPortaoSingle);
@@ -39,7 +34,7 @@ function executar(){
 		var linePost = post - (endPost + cornerPost);
 		var painel = linePost + 1;
 		var bag = post * 1.25;
-		var bag50 = (portaoSingle * 4) + (portaoDouble * 8);
+		var bag50 = (portaoSingle * 7) + (portaoDouble * 7);
 		var gateHinges = (portaoSingle * 1) + (portaoDouble * 2);
 		var heavyPost = (portaoSingle * 2) + (portaoDouble * 2) - blankPost;
 		var lock = portaoDouble + portaoSingle ;
