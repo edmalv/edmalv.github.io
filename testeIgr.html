@@ -17,12 +17,13 @@
 		var medidaPortaoSingle = parseInt(0);
 		var medidaPortaoDouble = parseInt(0);
 		if(portaoSingle > parseInt(0)){
-			medidaPortaoSingle = parseInt(prompt("Medida portão single?", ""));
+			for (var i = 0; i < portaoSingle; i++) {
+				medidaPortaoSingle = parseInt(prompt("Medida portão single? - " + i  , ""));
+			}
 		}
 		if(portaoDouble > parseInt(0)){
 			for (var i = 0; i < portaoDouble; i++) {
-				alert(i);
-				medidaPortaoDouble += parseInt(prompt("Medida portão double?", ""));
+				medidaPortaoDouble += parseInt(prompt("Medida portão double? - "  + i , ""));
 			}
 		}
 		alert(medidaPortaoDouble);
