@@ -43,7 +43,7 @@ function executar(){
 		
 		var texto = 'RESULTADO:'+
 			'<br><b> Line Post  </b> =  ' + Math.round( linePost ) +
-			'<br><b> Painel </b> =  ' + Math.round( painel )+
+			'<br><b> Panel </b> =  ' + Math.round( painel )+
 			'<br><b> Corner Post </b> =  ' + cornerPost +
 			'<br><b> End Post </b> =  ' + endPost +
 			'<br><b> Heavy End </b> =  ' + heavyPost +
@@ -51,8 +51,8 @@ function executar(){
 			'<br><b> Cap </b> =  ' + cap +
 			'<br><b> Quickret 80lbs </b> =  ' + Math.round(bag)  +
 			'<br><b> Quickret 50lbs </b> =  ' +  bag50 +
-			'<br><b> Portão Single  </b> =  ' + portaoSingle  +
-			'<br><b> Portão Double  </b> =  ' + portaoDouble + 
+			'<br><b> Gate Single  </b> =  ' + portaoSingle  +
+			'<br><b> Gate Double  </b> =  ' + portaoDouble + 
 			'<br><b> Gate hinges  </b> =  ' + gateHinges + 
 			'<br><b> Drop rod </b> =  ' + portaoDouble + 
 			'<br><b> Lock </b> =  ' + lock+ 
