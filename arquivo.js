@@ -43,24 +43,28 @@ function executar(){
 		var lock = portaoDouble + portaoSingle ;
 		
 		
+		var texto = 'RESULTADO:'+
+			'<br><b> Line Post  </b> =  ' + Math.round( linePost ) +
+			'<br><b> Painel </b> =  ' + Math.round( painel )+
+			'<br><b> Corner Post </b> =  ' + cornerPost +
+			'<br><b> End Post </b> =  ' + endPost +
+			'<br><b> Heavy Post </b> =  ' + heavyPost +
+			'<br><b> Cap </b> =  ' + Math.round(cap) +
+			'<br><b> Quickret 80lbs </b> =  ' + Math.round(bag)  +
+			'<br><b> Quickret 50lbs </b> =  ' +  bag50 +
+			'<br><b> Portão Single  </b> =  ' + portaoSingle  +
+			'<br><b> Portão Double  </b> =  ' + portaoDouble + 
+			'<br><b> Gate hinges  </b> =  ' + gateHinges + 
+			'<br><b> Drop rod </b> =  ' + portaoDouble + 
+			'<br><b> Lock </b> =  ' + lock+ 
+			'';
+		
+		$( "p" ).remove();
+		$("body").append("<p>" + texto + "</p>");
+		
 
-		alert('Resultado:'+
-			'\n Line Post = ' + Math.round( linePost ) +
-			 '\n Painel = ' + Math.round( painel )+
-			'\n Corner Post = ' + cornerPost +
-			'\n End Post = ' + endPost +
-			'\n Heavy Post = ' + heavyPost +
-			'\n Cap = ' + Math.round(cap) +
-			'\n Quickret 80lbs = ' + Math.round(bag)  +
-			'\n Quickret 50lbs = ' +  bag50 +
-			'\n Portão Single  = ' + portaoSingle  +
-			'\n Portão Double  = ' + portaoDouble + 
-			'\n Gate hinges  = ' + gateHinges + 
-			'\n Drop rod = ' + portaoDouble + 
-			'\n Lock = ' + lock+ 
-			'');
+		
 
-	document.write("seu texto");
 
 		 
 }
