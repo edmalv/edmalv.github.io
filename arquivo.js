@@ -12,13 +12,13 @@ function executar(){
 		if(portaoSingle > parseInt(0)){
 			for (var i = 0; i < portaoSingle; i++) {
 				medidaPortaoSingle = parseInt(prompt("Medida portão single? - Portão" + i  , ""));
-				blankPost += parseInt(prompt("Quantos blanck post? - Portão" + i  , "0"));
+				blankPost += parseInt(prompt("Quantos blank post? - Portão" + i  , "0"));
 			}
 		}
 		if(portaoDouble > parseInt(0)){
 			for (var i = 0; i < portaoDouble; i++) {
-				medidaPortaoDouble += parseInt(prompt("Medida portão double? - "  + i , ""));
-				blankPost += parseInt(prompt("Quantos blanck post? - Portão" + i  , "0"));
+				medidaPortaoDouble += parseInt(prompt("Medida portão double? - Portão"  + i , ""));
+				blankPost += parseInt(prompt("Quantos blank post? - Portão" + i  , "0"));
 			}
 		}
 
