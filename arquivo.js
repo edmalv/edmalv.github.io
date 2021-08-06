@@ -39,12 +39,12 @@ function executar(){
 		var linePost = post - (endPost + cornerPost);
 		var painel = linePost + 1;
 		var bag = post * 1.25;
-		var cap = Math.round( linePost ) + cornerPost + endPost + heavyPost + blankPost;
 		var bag50 = (portaoSingle * 4) + (portaoDouble * 8);
 		var gateHinges = (portaoSingle * 1) + (portaoDouble * 2);
 		var heavyPost = (portaoSingle * 2) + (portaoDouble * 2) - blankPost;
 		var lock = portaoDouble + portaoSingle ;
-		
+		var cap = parseInt(Math.round( linePost )) + parseInt(cornerPost) + parseInt(endPost) +parseInt(heavyPost) + parseInt(blankPost);
+	
 		
 		var texto = 'RESULTADO:'+
 			'<br><b> Line Post  </b> =  ' + Math.round( linePost ) +
