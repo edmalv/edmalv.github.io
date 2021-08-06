@@ -11,9 +11,17 @@
 		var endPost = parseInt(prompt("Quantos end Post?", ""));
 		var cornerPost = parseInt(prompt("Quantos corner post?", ""));
 		var comprimento = parseInt(prompt("Quantos comprimento do painel?", "8"));
-		var portaoSingle = parseInt(prompt("Quantos portão single?", ""));
-		var portaoDouble = parseInt(prompt("Quantos portão double?", ""));
+		var portaoSingle = parseInt(prompt("Quantos portão single?", "0"));
+		var portaoDouble = parseInt(prompt("Quantos portão double?", "0"));
 		
+		var medidaPortaoSingle = parseInt(0);
+		var medidaPortaoDouble = parseInt(0);
+		if(portaoSingle > 0){
+			medidaPortaoSingle = parseInt(prompt("Medida portão single?", ""));
+		}
+		if(portaoDouble > 0){
+			medidaPortaoDouble = parseInt(prompt("Medida portão double?", ""));
+		}
 		
 
 		/*var medida1 =  110;
@@ -22,11 +30,11 @@
 		var comprimento = 8;*/
 		
 		if(portaoSingle > 0){
-			medida1 = medida1 - (portaoSingle * 4);
+			medida1 = medida1 - (portaoSingle * medidaPortaoSingle);
 		}
 		if(portaoDouble > 0){
 
-			medida1 = medida1 - (portaoDouble * 10);
+			medida1 = medida1 - (portaoDouble * medidaPortaoDouble);
 		}
 		
 		var post = medida1 / comprimento;
