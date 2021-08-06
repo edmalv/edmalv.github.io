@@ -60,7 +60,7 @@ function executar(){
 			'\n Lock = ' + lock+ 
 			'');
 
-
+	document.write("seu texto");
 
 		 
 }
