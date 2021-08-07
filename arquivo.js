@@ -32,7 +32,7 @@ function executar(){
 		
 		var post = medida1 / comprimento;
 		var linePost = post - (endPost + cornerPost);
-		var painel = linePost + 1;
+		var painel = post + 1;
 		var bag = post * 1.25;
 		var bag50 = (portaoSingle * 7) + (portaoDouble * 7);
 		var gateHinges = (portaoSingle * 1) + (portaoDouble * 2);
